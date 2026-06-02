@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TimeFrame Arasa Pro - Cute Edition</title>
+    <title>JADWAL ROMBONGAN ARASA STORE PUSAT</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <style>
@@ -31,7 +31,7 @@
         <div class="flex justify-between items-center mb-6 bg-white p-3 rounded-2xl shadow-cute-sm border border-pink-50">
             <div>
                 <p class="text-[9px] text-[#ff7aa7] font-black uppercase tracking-wider">Akses Operasional</p>
-                <h2 id="role-display" class="text-xs font-extrabold text-gray-600 mt-0.5">Mode: GUEST (Lihat Saja)</h2>
+                <h2 id="role-display" class="text-xs font-extrabold text-gray-600 mt-0.5">Mode: - </h2>
             </div>
             <button onclick="openLoginModal()" id="btn-login-trigger" class="bg-[#ff8cb3] text-white text-[10px] font-black uppercase tracking-wider px-4 py-2 rounded-xl shadow-cute-sm hover:bg-[#ff7aa7] transition-all">
                 Login PIN
@@ -41,8 +41,8 @@
         <div id="view-calendar" class="tab-view">
             <div class="flex justify-between items-center mb-4 px-1">
                 <div>
-                    <h1 class="text-2xl font-black text-[#4e3c4c] tracking-tight">TimeFrame</h1>
-                    <p class="text-[10px] text-gray-400 font-semibold">Dashboard Kreatif Arasa</p>
+                    <h1 class="text-2xl font-black text-[#4e3c4c] tracking-tight">Jadwal Rombongan</h1>
+                    <p class="text-[10px] text-gray-400 font-semibold">Dashboard Arasa</p>
                 </div>
             </div>
 
@@ -278,7 +278,7 @@
 
             if(pin === '1511') {
                 userRole = 'admin';
-                display.innerText = "Mode: ADMIN (Full Akses)";
+                display.innerText = "Mode: Kak Elok";
                 display.className = "text-xs font-extrabold text-pink-600 mt-0.5";
                 btnTrigger.innerText = "Logout";
                 showToast("Halo Admin Terhormat!");
@@ -286,7 +286,7 @@
                 refreshAllViews();
             } else if(pin === '1115') {
                 userRole = 'client';
-                display.innerText = "Mode: CLIENT (Khusus Cooking)";
+                display.innerText = "Mode: Verdy";
                 display.className = "text-xs font-extrabold text-purple-600 mt-0.5";
                 btnTrigger.innerText = "Logout";
                 showToast("Akses Client Cooking Aktif!");
